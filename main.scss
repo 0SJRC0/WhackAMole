@@ -1,0 +1,72 @@
+:root {
+    --game-area: #c4c6bb;
+    --tube-color: #1b1b1b;
+    --font-color: #e4e3dd;
+    --highlight-color: #595f39;
+    --secondary-color: #e8d8d8;
+    --tube-shadow: #b0b1ad;
+}
+
+
+body {
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    border-radius: 4em;
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--game-area);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+
+
+.tube {
+    flex: 0 0 30%;
+    position: relative;
+    background: radial-gradient(var(--tube-color) 0%, var(--tube-color) 50%,var(--tube-shadow) 100%);
+    border-radius: 50%;
+    height: 130px;
+    width: 200px;
+    border-top: 30px solid var(--tube-shadow);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Coming Soon', cursive;
+    height: 60px;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 1000;
+    color: rgb(67, 99, 72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fa-solid {
+    color: var(--secondary-color);
+    font-size: 150px;
+    display: none;
+    cursor: pointer;
+}
